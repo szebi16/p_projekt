@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPv4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .szoveg{
+            font-size: 19px;
+            
+        }
+        .cim{
+            font-size: 40px;
+        }
+   
+            
+
+  
+        
+        .szoveg2{
+            font-size: 19px;
+            border: solid black 2px;
+            margin: 3px;
+            padding: 27px;
+        }
+        .osszegzes{
+            
+            padding: 30px;
+            border: solid black 2px;
+            margin: 3px;
+            font-size: 19px;
+
+        }
+        .text{
+         font-size: 20px;
+       }
+            
+        
+        .fekete{
+            padding: 60px;
+        }
+        .doboz{
+            background-color:gray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Navbar Brand (logó, vagy szöveg) -->
+            <a class="navbar-brand" href="#">Projekt</a>
+            
+            <!-- Hamburger menu (mobil nézethez) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navigációs menü -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="p.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="p2.html">IPv4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekt_3.html">OSI modell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekt_4.html">Hálózatok</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid  elso">
+        <div class="row gx-2">
+            <div class="col-x col-md-12 col-xl-12 ">
+                <h2 class=" text-white cim doboz">IPv4</h2><br><p class="szoveg">Az IPv4 címek 32 bites számok, amelyek négy oktettre (8 bites egység) vannak felosztva, tehát összesen négy számot tartalmaznak, mindegyik 0 és 255 között lehet.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid ">
+        <div class="row gx-1">
+            <div class="col-x col-md-6 col-xl-6 text-left d-flex ">
+                <div class="szoveg2 doboz text-white"><h1>IPv4 cím osztályok:</h1> <br>Az IPv4 címek osztályokra vannak bontva, amelyek a címek típusát és a felhasználásuk célját határozzák meg. Az osztályok főleg a címek első bájtjának (oktettjének) első bitjeitől függenek. Az alábbiakban bemutatom a legfontosabb IPv4 osztályokat:
+                    <br><ul>A osztály (Class A)<br>
+                    <li>Tartomány: 1.0.0.0 - 127.255.255.255</li><li>Alhálózati maszk: 255.0.0.0 (vagy /8)</li></ul>  <ul>B osztály (Class B)
+                    <li>Tartomány: 128.0.0.0 - 191.255.255.255</li><li>Alhálózati maszk: 255.255.0.0 (vagy /16)</li></ul></div>
+            </div>
+            <div class="col-x col-md-6 col-xl-6 text-left d-flex">       
+                <div class=" osszegzes doboz text-white">
+                    <h1>Összegzés:</h1><br> Az A osztály a legnagyobb hálózatokat célozza, ahol nagy számú eszköz csatlakozhat. <br>
+                        A B osztály közepes méretű hálózatokat szolgál ki. <br>
+                        A C osztály kisebb hálózatok számára lett kitalálva, és az internetes hálózatok legnagyobb részét alkotja. <br>
+                        A D osztály multicast forgalomra van fenntartva. <br>
+                        Az E osztály címek kísérleti vagy jövőbeli felhasználásra vannak fenntartva, és nem aktívan használják őket. <br>
+                        Az osztályok alapján határozhatjuk meg a címek felhasználási módját és a lehetséges alhálózati beállításokat.</h2>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-1">
+        <div class="row gx-1">
+            <div class="col-x col-xl-12 col-md-12 doboz szoveg2 text-white">
+                <ul><h1>C osztály (Class C)</h1>
+                    <li>Tartomány: 192.0.0.0 - 223.255.255.255</li><li>Alhálózati maszk: 255.255.255.0 (vagy /24)</li><ul> <ul>D osztály (Class D)
+                    <li>Tartomány: 224.0.0.0 - 239.255.255.255</li></ul> <ul>E osztály (Class E)
+                    <li>Tartomány: 240.0.0.0 - 255.255.255.255</li></ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

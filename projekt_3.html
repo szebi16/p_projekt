@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI modell</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+        h4{
+            font-size: 15px;
+        }
+        .doboz{
+            padding: 20px;
+            border: solid black 2px;
+            background-color:gray;
+            margin-top: 5px;
+        }
+        .p{
+            margin-top: 6px;
+        }
+        .db{
+            padding: 20px;
+        }
+        .m{
+            padding: 30px;
+           
+        }
+      
+
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Navbar Brand (logó, vagy szöveg) -->
+            <a class="navbar-brand" href="#">Projekt</a>
+            
+            <!-- Hamburger menu (mobil nézethez) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navigációs menü -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="p.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="p2.html">IPv4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekt_3.html">OSI modell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekt_4.html">Hálózatok</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid mt-3">
+        <div class="row gx-2">
+            <div class="col-x col-xl-12 col-md-12">
+                <h1>OSI modell szintjei:</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz text-white">
+                    <h4>Fizikai réteg:</h4>
+                    <p>Ez a legalsó réteg, amely az adatokat fizikai jelekké alakítja, és a hálózati eszközökkel való kommunikációval foglalkozik (pl. kábelek, hálózati adapterek).</p>
+                </div>
+            </div>
+    
+           
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz text-white">
+                    <h4>Adatkapcsolati réteg:</h4>
+                    <p>Az adatokat keretekké alakítja, és biztosítja a hibamentes adatátvitelt a közvetlenül kapcsolódó hálózati eszközök között.</p>
+                </div>
+            </div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz db text-white">
+                    <h4>Hálózati réteg:</h4>
+                    <p>Az adatok célba juttatásáért felelős, az útvonalválasztást és címzést végzi (pl. IP, ICMP).</p>
+                </div>
+            </div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz text-white">
+                    <h4>Szállítási réteg:</h4>
+                    <p>Biztosítja az adatok megbízható átvitelét, szegmentálja az adatokat, és hibakezelést végez (pl. TCP, UDP).</p>
+                </div>
+            </div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz db text-white">
+                    <h4>Viszony réteg:</h4>
+                    <p>A kapcsolatokat hozza létre, kezel és bontja, biztosítja, hogy a kommunikációs csatornák megfelelően működjenek (pl. RPC, NetBIOS).</p>
+                </div>
+            </div>
+    
+            
+            <div class="col-xl-4 col-md-4 col-12 mb-3">
+                <div class="doboz db text-white ">
+                    <h4>Megjelenítési réteg:</h4>
+                    <p>Az adatokat olyan formátumban alakítja át, amelyet az alkalmazás réteg használhat (pl. titkosítás, kódolás, tömörítés).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-x col-xl-12 col-md-12 " >
+            <div class="row">
+                <div class="doboz m d-flex text-white">
+                    <h4>Alkalmazási réteg: </h4>
+                    <p>A legfelső réteg, amely közvetlen kapcsolatot biztosít a felhasználóval és a hálózati alkalmazásokkal (pl. HTTP, FTP, DNS).</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    
+</div>
+</div>
+
+
+
+
+</body>
+</html>
